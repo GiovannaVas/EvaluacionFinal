@@ -1,0 +1,209 @@
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+  font-family: 'Dancing Script', cursive;
+	width: auto;
+}
+
+.contenido{
+	width: auto;
+	text-align: center;
+}
+
+ header{
+	 padding: 30px;
+	 background-color: #5b7989;
+	 border-radius: 10px 10px 0px 0px;
+	 width: auto;
+ }
+
+.Cabecera > div{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: justify;
+	width: auto;
+}
+
+ header h1{
+	 text-align: left;
+	 font-size: 50px;
+ 	 text-shadow: 2px 2px 2px #02010a;
+ }
+
+ header nav{
+ 	text-align: right;
+ 	font-size: 25px;
+}
+
+header nav a{
+	color: white;
+	text-decoration: none;
+}
+
+@media(max-width:900px){
+	header nav a{
+		text-align: right;
+	}
+}
+
+@media(min-width:900px){
+	header nav a{
+		text-align: center;
+	}
+}
+
+@-webkit-keyframes miSlideIn{
+0%{
+margin-top:150%;
+}
+60%{
+margin-top:-5%;
+}
+100%{
+margin-top:0%;
+}
+}
+
+header{
+	animation:miSlideIn 1s;
+}
+
+#ImagenCentral{
+	padding: 30px;
+	background-color: #82c3a6;
+	width: auto;
+}
+
+.contenedor1{
+	display: flex;
+	flex-direction: row;
+}
+
+.contenedor1 div{
+	text-align: center;
+	vertical-align: bottom;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+#imagen1 img{
+	max-width: 100%;
+}
+
+img{
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+#ImagenSecundaria{
+	padding: 30px;
+	background-color: #d5c75f;
+	width: auto;
+}
+
+.contenedor2{
+	display: flex;
+	flex-direction: row;
+}
+
+.contenedor2 > div{
+	padding: 3px;
+	margin: 3px;
+	font-size: 25px;
+}
+
+
+
+#Imagen2 img:hover{
+	box-shadow: 2px 2px #82c3a6;
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+#imagen3 img:hover{
+	box-shadow: 2px 2px #82c3a6;
+	-webkit-transform: translate(20px, -5px);
+	transform: translate(20px, -5px);
+}
+
+#Imagen2, #Imagen3 {
+	width: 50%;
+}
+
+#Imagen2 img, #Imagen3 img {
+	max-width: 100%;
+}
+
+.PayRe div{
+	width: 32%;
+	display: inline-block;
+}
+
+.PayRe img{
+	max-width: 100%;
+}
+
+#imagen4, #imagen10{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#imagen5, #imagen7, #imagen9, #imagen11, #imagen13, #imagen15{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen6, #imagen12{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+
+footer{
+	padding: 30px;
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	width: auto;
+}
+
+#PieDepagina{
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+
+}
+
+footer h1{
+	text-align: left;
+	font-size: 30px;
+	color: black;
+}
+
+footer li{
+	display: inline;
+	text-align: left;
+}
+
+footer h1 p{
+	text-align: left;
+	font-size: 30px;
+}
+footer p{
+	color: black;
+	font-size: 20px;
+}
+
+@media (max-width: 900px)
+{
+	header{
+		width: auto;
+	}
+	#ImagenCentral{
+		width:auto;
+
+	}
+}
